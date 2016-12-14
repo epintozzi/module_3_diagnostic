@@ -7,7 +7,7 @@ describe "User searches for nearest stations" do
     fill_in :q, with: "80203"
     click_on "Locate"
 
-    expect(path).to eq("/search") # with params visible in url
+    expect(page).to have_current_path(search_path, only_path: true) # with params visible in url
     expect(page).to have_content("Name")
     expect(page).to have_content("Address")
     expect(page).to have_content("Fuel Types")
