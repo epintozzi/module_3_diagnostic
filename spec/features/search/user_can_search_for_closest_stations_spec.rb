@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "User searches for nearest stations" do
-  scenario "a user can search for the 10 nearest alt fuel stations" do
+  scenario "a user can search for the 10 nearest alt fuel stations", :vcr do
     visit root_path
 
     fill_in :q, with: "80203"
