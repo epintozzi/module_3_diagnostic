@@ -12,6 +12,6 @@ class AltFuelFinderService
   def get_response
     response = conn.get("?api_key=#{ENV['nrel_api_key']}&location=#{params[:q]}&fuel_type=ELEC,LPG&limit=10")
 
-    parsed_response = JSON.parse(response.body)
+    parsed_response = JSON.parse(response.body, symbolize_names: true)
   end
 end
