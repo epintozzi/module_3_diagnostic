@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=0DBAINKV4NlTM9e9pnWVHBpsB99fekGc90VVHEgi&fuel_type=ELEC,LPG&limit=10&location=%2780216%27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 14 Dec 2016 17:19:45 GMT
+      Last-Modified:
+      - Wed, 14 Dec 2016 17:19:45 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '991'
+      X-Request-Id:
+      - 2d746f27-3de9-49ec-9bc1-da12f018a453
+      X-Runtime:
+      - '0.009746'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.7845048,"longitude":-104.9797753,"precision":{"name":"postal_code","types":["postal_code"],"value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":50,"station_counts":{"total":103,"fuels":{"E85":{"total":0},"ELEC":{"total":98,"stations":{"total":45}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":0},"CNG":{"total":0},"LPG":{"total":5}}},"offset":0,"fuel_stations":[{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-12-14","expected_date":null,"fuel_type_code":"ELEC","id":53078,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"IBEW68","station_phone":"888-758-4389","updated_at":"2016-12-14T09:54:29Z","geocode_status":"GPS","latitude":39.7989545,"longitude":-104.9822851,"city":"Denver","intersection_directions":"WIND
+        TURBINE; Look for the Wind Turbine in Central parking lot and use parking
+        spaces designated EV only","plus4":null,"state":"CO","street_address":"5660
+        Logan St","zip":"80216","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:90707"]},"distance":1.00581},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-12-14","expected_date":null,"fuel_type_code":"ELEC","id":62563,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"ROCKIES
+        PARKING","station_phone":"888-758-4389","updated_at":"2016-12-14T09:48:33Z","geocode_status":"200-8","latitude":39.7598137,"longitude":-104.9876131,"city":"Denver","intersection_directions":"GARAGE
+        FL 1 #2; 1st Floor on side facing ballpark\nGARAGE FL 1 #1; 1st Floor of garage,
+        side closest to ballpark","plus4":null,"state":"CO","street_address":"2722-2900
+        Broadway","zip":"80205","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:96669","1:98179"]},"distance":1.75382},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"ELEC","id":76280,"groups_with_access_code":"Public","open_date":"2016-06-01","owner_type_code":"P","status_code":"E","station_name":"City
+        of Denver - Chestnut Parking Lot","station_phone":"303-607-9093","updated_at":"2016-11-02T17:38:04Z","geocode_status":"200-8","latitude":39.758012,"longitude":-104.9982284,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"2004
+        Chestnut Pl","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":2.07505},{"access_days_time":"7:30am-4:30pm
+        M-F; must have state decal","cards_accepted":"Cash Checks M V","date_last_confirmed":"2016-11-02","expected_date":null,"fuel_type_code":"LPG","id":14525,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"Metrogas
+        Inc","station_phone":"303-428-3036","updated_at":"2016-11-02T17:28:24Z","geocode_status":"200-8","latitude":39.812654,"longitude":-104.9961233,"city":"Denver","intersection_directions":"At
+        Huron St, driveway is between Broadway and Pecos","plus4":null,"state":"CO","street_address":"790
+        W 64th Ave","zip":"80221","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":2.12801},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-12-14","expected_date":null,"fuel_type_code":"ELEC","id":69145,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"MONOGRAM
+        RES","station_phone":"888-758-4389","updated_at":"2016-12-14T09:41:28Z","geocode_status":"GPS","latitude":39.753644,"longitude":-104.9902644,"city":"Denver","intersection_directions":"POINT
+        21; The station is located in the parking garage","plus4":null,"state":"CO","street_address":"2131
+        Lawrence St","zip":"80205","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:106201"]},"distance":2.20113},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-12-14","expected_date":null,"fuel_type_code":"ELEC","id":66512,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"ALTA
+        CITY HOUSE","station_phone":"888-758-4389","updated_at":"2016-12-14T09:40:21Z","geocode_status":"200-9","latitude":39.7565853,"longitude":-105.0009206,"city":"Denver","intersection_directions":"CITY
+        HOUSE FL 4; Between spaces 286 and 287 on 4th floor\nCITY HOUSE FL 2; 2nd
+        Floor\nCITY HOUSE FL 1; Between spaces 41 and 42 on 1st Floor\nCITY HOUSE
+        FL 3; Between spaces 204 and 205 on 3rd floor\nCITY HOUSE FL 5; Between spaces
+        369 & 369 on 5th floor","plus4":null,"state":"CO","street_address":"1801 Chestnut
+        Place","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":10,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:107675","1:107679","1:107681","1:107685","1:107683"]},"distance":2.23104},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-12-14","expected_date":null,"fuel_type_code":"ELEC","id":78944,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"1","station_phone":"888-758-4389","updated_at":"2016-12-14T09:04:35Z","geocode_status":"GPS","latitude":39.7495876,"longitude":-104.9803625,"city":"Denver","intersection_directions":"PANA
+        DENVER HQ2; West side of the building\nPANA DENVER HQ1; West side of the building","plus4":null,"state":"CO","street_address":"6144
+        N. Panasonic Way","zip":"80220","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:153249","1:152557"]},"distance":2.40917},{"access_days_time":"MO:
+        12:00am-12:00am; TU: 12:00am-12:00am; WE: 12:00am-12:00am; TH: 12:00am-12:00am;
+        FR: 12:00am-12:00am; SA: 12:00am-12:00am; SU: 12:00am-12:00am","cards_accepted":null,"date_last_confirmed":"2016-12-14","expected_date":null,"fuel_type_code":"ELEC","id":67673,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"1800
+        Larimer","station_phone":"800-663-5633","updated_at":"2016-12-14T08:46:36Z","geocode_status":"GPS","latitude":39.7512822,"longitude":-104.9944365,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1800
+        Larimer Street, Suite 1800","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["1036"],"posts":["2391","2392"]},"distance":2.42133},{"access_days_time":"24
+        hours daily; for Tesla use only; see valet for access","cards_accepted":null,"date_last_confirmed":"2016-09-02","expected_date":null,"fuel_type_code":"ELEC","id":77499,"groups_with_access_code":"Public","open_date":"2016-07-15","owner_type_code":"P","status_code":"E","station_name":"The
+        Ritz-Carlton - Tesla","station_phone":"303-312-3800  877-798-3789","updated_at":"2016-09-02T17:58:10Z","geocode_status":"200-8","latitude":39.7499978,"longitude":-104.9919883,"city":"Denver
+        ","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1881
+        Curtis St","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["TESLA"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"Tesla","ev_network_web":"http://www.teslamotors.com/supercharger","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":2.46787},{"access_days_time":"MO:
+        Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR:
+        Not Specified; SA: Not Specified; SU: Not Specified","cards_accepted":null,"date_last_confirmed":"2016-12-14","expected_date":null,"fuel_type_code":"ELEC","id":68589,"groups_with_access_code":"Public
+        - Card key at all times","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"Seventeenth
+        Street Plaza","station_phone":"800-663-5633","updated_at":"2016-12-14T08:46:37Z","geocode_status":"GPS","latitude":39.7501605,"longitude":-104.9951224,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1225
+        17th St.","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"SemaCharge
+        Network","ev_network_web":"http://www.semacharge.com/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"station":["1114"],"posts":["2643","2642"]},"distance":2.50637}]}'
+    http_version: 
+  recorded_at: Wed, 14 Dec 2016 17:19:45 GMT
+recorded_with: VCR 3.0.3

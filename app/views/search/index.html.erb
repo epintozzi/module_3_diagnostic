@@ -1,7 +1,13 @@
 <div class="container">
   <h2> Search Results </h2>
 
+  <% @fuel_stations.each do |station| %>
+      Station Name: <%= station["station_name"] %><br>
+      Street Address: <%= station["street_address"] %><br>
+      Fuel Types: <%= station["fuel_type_code"] %><br>
+      Distance: <%= station["distance"] %><br>
+      Access Times: <%= station["access_days_time"] %>
+      <hr>
+  <% end %>
 
-
-  
 </div>
